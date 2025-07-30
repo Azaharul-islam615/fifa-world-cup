@@ -83,8 +83,75 @@
     border-radius: 30px;
     margin: 50px auto;
 }
+/* main */
+.main-section{
+    display: flex;
+    gap :55px;
+}
+.btn-section{
+    max-width: 25%;
+}
+.btn-section{
+    height: 312px;
+    padding: 30px;
+    background-color: black;
+    border-radius: 10px;
+}
+.btn-section div button{
+   width: 230px;
+    height: 64px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+}
+.btn-1{
+    background-color: white;
+    
+}
+.btn-3{
+    background-color:#DD0000;
+    color: white;
+}
+.carts{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-column-gap: 26px;
+   grid-row-gap: 15px;
+}
+ .item{
+    padding: 20px;
+}
+.item-1{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    gap: 20px;
+}
+.item-2{
+    display: flex;
+    gap: 10px;
+}
+
+.cart img{
+    width: 100%;
+}
+.cart{
+ 
+    border: 1px solid rgba(0, 0, 0, 0.251);
+}
+.btn-4{
+    padding: 4px 17px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.item h5{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 /*  Responssive */
 @media screen and (min-width:576px) and (max-width:992px) {
+    /* banner section */
     .container{
         max-width: 734px;
         margin: 0 auto;
@@ -112,8 +179,38 @@
         padding: 12px;
         font-size: 14px;
     }
+    .main-section{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .carts{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .btn-section{
+        display: flex;
+        background-color: white;
+        gap: 10px;
+        height:130px;
+        padding: 0;
+    }
+   .btn-1{
+    background-color:rgba(128, 128, 128, 0.085);
+   }
+   .btn-section div button{
+    max-width: 230px;
+   }
+   .btn-section div button{
+   width: 230px;
+    height: 64px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
 }
+}
+
 @media screen and (max-width:576px) {
+    /* banner section */
     .banner{
         flex-direction: column;
         text-align: center;
@@ -134,4 +231,24 @@
         margin-bottom: 8px;
         margin-top: 20px;
     }
+    .carts{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-section{
+        flex-direction: column;
+      
+    }
+    .btn-section{
+        background-color: white;
+        width: 100%;
+        margin: 0 0 0 40px ;
+    }
+    
+     .btn-1{
+    background-color:rgba(128, 128, 128, 0.085);
+     padding: 5px;
+   }
+   .main-section{
+    gap: 5px;
+   }
 }
