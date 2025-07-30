@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* shared style */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+   
+}
+.btn{
+    padding: 16px 25px;
+    background-color: rgba(221, 0, 0, 1);
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+/* banner section */
+.banner-content{
+    padding: 50px 0 50px 60px;
+    max-width: 568px;
+}
+.banner-content h3{
+    font-size: 70px;
+    margin-bottom: 20px;
+    line-height: 70px;
+   
+}
+.banner-content p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.banner-img img{
+    width: 100%;
+    
+}
+.banner-img{
+    padding: 33px 17px 0 0;
+}
+.banner{
+     background-color: black;
+    color: white;
+    display: flex;
+      align-items: center;
+    justify-content: space-between;
+    gap: 81px;
+    border-radius: 30px;
+    margin: 50px auto;
+}
+/*  Responssive */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .container{
+        max-width: 734px;
+        margin: 0 auto;
+    }
+    .banner-img img{
+        width: 323px;
+        height: 340px;
+    }
+    .banner{
+        gap: 0px;
+    }
+    .banner-content{
+        padding: 20px 0 20px 30px;
+    }
+    .banner-content h3{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .banner-content p{
+        font-size: 14px;
+        margin-bottom: 10px ;
+    }
+    .btn{
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column;
+        text-align: center;
+       align-items: center;
+        padding: 10px;
+        gap: 21px;
+    }
+    .banner-img{
+      text-align: center;
+      padding: 0;
+    }
+    .banner-content{
+        padding: 0;
+    }
+    .banner-content h3{
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 8px;
+        margin-top: 20px;
+    }
+}
